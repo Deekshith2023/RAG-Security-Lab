@@ -12,16 +12,15 @@ Attack it → observe the result → add a defense → run the same attack again
 
 Anything documented in this repository comes from that process.
 
-What I'm Testing
+## What I'm Testing
 
-I started with the model itself before adding RAG.
+I started with the model itself before adding RAG. The first tests focus on:
 
-The first tests focus on:
+- System prompt leakage
+- Jailbreak attempts
+- Instruction override attempts
+- Model hallucinations and incorrect claims about its own behaviour
 
-System prompt leakage
+## How I Test
 
-Jailbreak attempts
-
-Instruction override attempts
-
-Model hallucinations and incorrect claims about its own behaviour
+Every attack runs in a fresh conversation, several times, because a small model won't answer the same way twice. A leak only counts if the planted fake secret (a canary) shows up exactly. Anything else is logged as a partial leak or a refusal, and I read the actual replies before writing anything down
