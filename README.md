@@ -28,7 +28,7 @@ Tests whether a simulated SOC Analyst can retrieve information restricted to a S
 
 **Observed in the documented tests:** with filtering off, the restricted synthetic marker was disclosed. Prompt-only protection still exposed a shortened version of the marker. Enforced retrieval filtering excluded the restricted report from the Analyst's context while allowing the simulated SOC Lead to retrieve it.
 
-### 5. [AI Agent Tool Abuse](https://github.com/Deekshith2023/RAG-Security-Lab/tree/main/Exp-05)
+### 5. [AI Agent Tool Abuse](https://github.com/Deekshith2023/RAG-Security-Lab/tree/main/AI Agent Tool Abuse)
 
 Tests whether an LLM-driven assistant can request sensitive simulated SOC actions and whether application-level authorization enforces role and approval requirements. The tools run in memory only; no real host or endpoint security software is changed.
 
