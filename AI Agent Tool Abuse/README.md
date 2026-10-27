@@ -130,5 +130,3 @@ python .\agent.py --role analyst --policy-mode open --access-mode off --docs .\d
 
 ## Data notes
 All documents and action targets are synthetic. Tool actions are in-memory simulations only. Scripts were developed with AI assistance; the experiment records observed outcomes and limitations rather than assuming an attack succeeded because the model described it.
-
-All documents and action targets are synthetic. Tool actions are in-memory simulations only. Scripts were developed with AI assistance; the experiment records observed outcomes and limitations rather than assuming an attack succeeded because the model described it.
